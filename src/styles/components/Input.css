@@ -1,0 +1,11 @@
+.form-input {
+  background: #ffffff;
+  border: 1px solid #dcd9d9;
+  border-radius: 8px;
+  padding: 16px;
+  @apply transition-all
+}
+
+.input-error {
+  @apply border-red-400 border-[3px] border-solid
+}

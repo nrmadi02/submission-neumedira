@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("./components/Button.css");
+@import url("./components/Input.css");
+
+html {
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background: white !important;
+  }
+}
+
+.center-div {
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.shadow-login {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  /* margin-bottom: 20px; */
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 4px;
+  @apply border-[1px] border-[#FA7C54];
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: white;
+}
+
+.checkbox input:checked ~ .checkmark {
+  @apply bg-[#FA7C54];
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.search-bar {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.person-info {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}

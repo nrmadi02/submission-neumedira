@@ -1,0 +1,22 @@
+.btn {
+  @apply flex flex-row items-center justify-center font-Inter text-[16px] font-semibold transition-all hover:scale-[1.03] active:scale-100 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply !bg-[#FA7C54] text-white;
+}
+
+.btn-borrow {
+  @apply !bg-[#A0A0A0] text-white;
+}
+
+.btn-green {
+  @apply !bg-[#42BB4E] text-white;
+}
+
+.btn-outline-primary {
+  background: #ffffff !important;
+  border: 1px solid #f76b56;
+  border-radius: 5px;
+  color: #f76b56;
+}
