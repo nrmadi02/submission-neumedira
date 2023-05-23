@@ -56,7 +56,7 @@ const dataSidebar: Sidebar[] = [
 ];
 
 const DashboardLayout = ({ children }: Props) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [width, setWidth] = useState<number>();
   const router = useRouter()
 
