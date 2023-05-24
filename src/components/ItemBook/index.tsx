@@ -19,11 +19,11 @@ const ItemBook = ({ data }: ItemBookProps) => {
   };
   const num = data.rating / 20;
   return (
-    <div className="relative flex md:h-[260px] w-full sm:w-[308px] flex-row items-center gap-[50px] md:justify-between rounded-[10px] bg-white pb-[12px] pl-[15px] pr-[20px] pt-[16px]">
+    <div className="relative z-10 flex md:h-[260px] w-full sm:w-[308px] flex-row items-center justify-center gap-[50px] md:justify-between rounded-[10px] bg-white pb-[12px] pl-[15px] pr-[20px] pt-[16px]">
       {data.id == "4" || data.id == "5" || data.id == "6" ? (
         <div className="absolute right-[10px] top-[11px] h-[10px] w-[10px] rounded-full bg-[#FC4141]"></div>
       ) : null}
-      <div className="flex h-full flex-col items-start">
+      <div className="flex  z-10 h-full flex-col items-start">
         <Image
           style={{ minHeight: 170 }}
           width={127}
@@ -46,7 +46,7 @@ const ItemBook = ({ data }: ItemBookProps) => {
           </p>
         </div>
       </div>
-      <div>
+      <div className=" z-10">
         <p className="text-[15px] font-normal">Borrowed on</p>
         <p className="mt-[9px] text-[10px] font-normal">11 Mar 2023 09:00 AM</p>
         <p className="mt-[9px] text-[15px] font-normal">Submission Due</p>

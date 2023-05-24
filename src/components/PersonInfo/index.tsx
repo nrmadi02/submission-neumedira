@@ -5,7 +5,7 @@ import Image from "next/image";
 const PersonInfo = () => {
   const store = useStore()
   return (
-    <div className="person-info flex h-[50px] w-[203px] flex-row items-center px-[3px] py-[2px]">
+    <div className="person-info z-50 flex h-[50px] w-[203px] flex-row items-center px-[3px] py-[2px]">
       {store.authUser?.image !== undefined ? <Image
         style={{
           height: 45,

@@ -104,7 +104,7 @@ const DashboardLayout = ({ children }: Props) => {
             src={LogoMyBook}
             alt="_logo"
           />
-          <div className="mt-[99px] flex flex-col gap-[34px] text-[20px]">
+          <div className="xxl:mt-[99px] md:mt-[60px] flex flex-col gap-[34px] text-[20px]">
             {dataSidebar.map((item, idx) => {
               return (
                 <ItemSidebar
@@ -118,16 +118,16 @@ const DashboardLayout = ({ children }: Props) => {
             })}
           </div>
         </div>
-        <div className="mt-[100px] flex flex-col gap-[15px] text-[15px] text-second">
+        <div className="mt-[200px] flex flex-col gap-[15px] text-[15px] text-second">
           <p className="cursor-pointer">About</p>
           <p className="cursor-pointer">Support</p>
           <p className="cursor-pointer">Terms & Condition</p>
         </div>
       </div>
-      <div className="relative h-full overflow-y-auto ">
+      <div className="relative z-50 h-full overflow-y-auto ">
         <button
           onClick={() => setIsOpen(true)}
-          className="btn fixed z-50 left-[20px] top-[40px] block md:hidden"
+          className="btn fixed z-50 left-[20px] top-[40px] sm:top-[50px] block md:hidden"
         >
           <Image
             style={{
@@ -139,7 +139,7 @@ const DashboardLayout = ({ children }: Props) => {
             alt="_icons"
           />
         </button>
-        <div className="left-0 right-0 top-0 flex h-[150px] w-full flex-row flex-wrap items-center justify-end gap-x-5 px-[20px] pt-[20px] md:sticky md:h-[120px] md:flex-nowrap md:justify-between md:pl-[46px] md:pr-[45px] md:pt-[0]">
+        <div className="left-0 right-0 top-0 flex h-[150px] sm:h-[120px] w-full flex-row flex-wrap items-center justify-end gap-x-5 px-[20px] pt-[20px] md:h-[120px] md:flex-nowrap md:justify-between md:pl-[46px] md:pr-[45px] md:pt-[0]">
           <SearchBar />
           <PersonInfo />
         </div>

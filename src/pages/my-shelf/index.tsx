@@ -51,7 +51,7 @@ const MyShelfPage: NextPage = () => {
             );
           })}
         </div>
-        <div className="mt-[34px] relative justify-normal sm:justify-between md:justify-normal md:static flex h-auto min-h-[260px] flex-row flex-wrap items-center gap-x-[20px] md:gap-x-[60px] gap-y-[28px]">
+        <div className="mt-[34px] z-30 relative justify-normal sm:justify-evenly xxl:justify-normal md:static flex h-auto min-h-[260px] flex-row flex-wrap items-center  gap-x-[20px] md:gap-x-[30px] xxl:gap-x-[60px] transition-all gap-y-[28px]">
           {isLoading == false ? (
             dataBooks?.data.map((item, idx) => {
               return <ItemBook key={idx} data={item} />;
